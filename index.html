@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yummy</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="bg-black ">
+    <section id="loding" class="d-none">
+        <span class="loader"></span>
+    </section>
+
+    <div>
+        <aside class=" d-flex">
+            <div id="aside"
+                class="text-light position-fixed z-3 w-25 bg-black d-flex flex-column justify-content-between vh-100">
+                <div id="links" class="ps-3 pt-3 d-flex flex-column gap-4 ">
+                    <a id="Search">Search</a>
+                    <a id="Categories">Categories</a>
+                    <a id="Area">Area</a>
+                    <a id="Ingredients">Ingredients</a>
+                    <a id="Contact">Contact Us</a>
+                </div>
+                <div class="ps-3 pb-5">
+                    <i class="ps-2 fa-brands fa-facebook"></i>
+                    <i class="ps-2 fa-brands fa-twitter"></i>
+                    <i class="ps-2 fa-solid fa-globe"></i>
+                    <p class="pt-3">Copyright Â© 2019 All Rights
+                        Reserved.</p>
+                </div>
+            </div>
+            <div id="logo-Yumm"
+                class="logo-Yumm bg-light d-flex flex-column position-fixed z-3 align-items-center justify-content-between  vh-100">
+                <img src="images/Mealify.image1.png" width="50" alt="">
+                <img id="open" src="images/Mealify.image3.svg" width="40" alt="">
+                <img id="close" class="d-none" src="images/Mealify.image4.svg" width="40" alt="">
+                <div class="logo-icon text-center pb-3">
+                    <i class="fa-solid fa-globe d-block"></i>
+                    <i class="fa-solid fa-share-nodes"></i>
+                </div>
+            </div>
+        </aside>
+
+
+
+        <section class="Search d-none">
+            <div class="w-75 gap-3 mx-auto d-flex justify-content-center my-5">
+                <input id="searchName" type="text" placeholder="Search By Name"
+                    class="text-light bg-transparent form-control">
+                <input id="searchLetter" type="text" maxlength="1" placeholder="Search By First Letter"
+                    class="text-light bg-transparent form-control">
+            </div>
+        </section>
+
+
+
+        <section id="mainData" class="py-5">
+            <div id="main" class="container">
+                <div class="main row gy-4">
+
+                </div>
+            </div>
+        </section>
+
+
+
+        <section class="Contact  d-none overflow-hidden  text-center">
+            <div class="row">
+                <div class="text-center vh-100 d-flex flex-column gap-4 justify-content-center align-items-center">
+                    <div class="inputs w-75 gap-3 mx-auto d-flex justify-content-center">
+                        <div class="w-100">
+                            <input id="Name" type="text" placeholder="Enter Your Name" class="form-control">
+                            <div id="alert-name" class="mt-2 d-none alert alert-danger">Special characters 20 and
+                                numbers
+                                not
+                                allowed
+                            </div>
+                        </div>
+                        <div class="w-100">
+                            <input id="Email" type="text" placeholder="Enter Your Email" class="form-control">
+                            <div id="alert-Email" class="mt-2 d-none alert alert-danger">Email not valid
+                                *exemple@yyy.zzz
+                            </div>
+                        </div>
+                    </div>
+                    <div class="inputs w-75 gap-3 mx-auto d-flex justify-content-center">
+                        <div class="w-100">
+                            <input id="Phone" type="number" placeholder="Enter Your Phone" class="form-control">
+                            <div id="alert-Phone" class="my-2 d-none alert alert-danger">Enter valid Phone Number</div>
+                        </div>
+                        <div class="w-100">
+                            <input id="Age" type="number" placeholder="Enter Your Age" class="form-control">
+                            <div id="alert-Age" class="my-2 d-none alert alert-danger">Enter valid age 10 : 100</div>
+                        </div>
+                    </div>
+                    <div class="inputs w-75 gap-3 mx-auto d-flex justify-content-center">
+                        <div class="w-100">
+                            <input id="Password" type="password" placeholder="Enter Your Password" class="form-control">
+                            <div id="alert-Password" class="mt-2 d-none alert alert-danger">Enter valid password
+                                *Minimum
+                                eight characters, at
+                                least
+                                one
+                                letter and one number:* (8 numbers)</div>
+                        </div>
+                        <div class="w-100">
+                            <input id="RePassword" type="password" placeholder="RePassword" class="form-control">
+                            <div id="alert-RePassword" class="mt-2 d-none alert alert-danger">Enter valid repassword
+                            </div>
+                        </div>
+                    </div>
+                    <div class="button">
+                        <button id="btn" class="disabled btn btn-outline-danger">
+                            submit
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
+<!-- <section class="Contact-Us d-none text-center">
+            <div class="row">
+                <div class="text-center vh-100 d-flex flex-column gap-4 justify-content-center align-items-center">
+                    <div class="inputs w-75 gap-3 mx-auto d-flex justify-content-center">
+                        <div class="w-100">
+                            <input id="Name" type="text" placeholder="Enter Your Name" class="form-control">
+                            <div id="alert-name" class="mt-2 d-none alert alert-danger">Special characters 20 and
+                                numbers
+                                not
+                                allowed
+                            </div>
+                        </div>
+                        <div class="w-100">
+                            <input id="Email" type="text" placeholder="Enter Your Email" class="form-control">
+                            <div id="alert-Email" class="mt-2 d-none alert alert-danger">Email not valid
+                                *exemple@yyy.zzz
+                            </div>
+                        </div>
+                    </div>
+                    <div class="inputs w-75 gap-3 mx-auto d-flex justify-content-center">
+                        <div class="w-100">
+                            <input id="Phone" type="number" placeholder="Enter Your Phone" class="form-control">
+                            <div id="alert-Phone" class="my-2 d-none alert alert-danger">Enter valid Phone Number</div>
+                        </div>
+                        <div class="w-100">
+                            <input id="Age" type="number" placeholder="Enter Your Age" class="form-control">
+                            <div id="alert-Age" class="my-2 d-none alert alert-danger">Enter valid age 10 : 100</div>
+                        </div>
+                    </div>
+                    <div class="inputs w-75 gap-3 mx-auto d-flex justify-content-center">
+                        <div class="w-100">
+                            <input id="Password" type="password" placeholder="Enter Your Password" class="form-control">
+                            <div id="alert-Password" class="mt-2 d-none alert alert-danger">Enter valid password
+                                *Minimum
+                                eight characters, at
+                                least
+                                one
+                                letter and one number:* (8 numbers)</div>
+                        </div>
+                        <div class="w-100">
+                            <input id="RePassword" type="password" placeholder="RePassword" class="form-control">
+                            <div id="alert-RePassword" class="mt-2 d-none alert alert-danger">Enter valid repassword
+                            </div>
+                        </div>
+                    </div>
+                    <div class="button">
+                        <button id="btn" class="disabled btn btn-outline-danger">
+                            submit
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section> -->
